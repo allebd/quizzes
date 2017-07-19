@@ -1,0 +1,290 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.alleb_d.eportal.StaffDashboardActivity">
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabStaffHost"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tabStaffCourseWare"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/logoHolder"
+                            android:weightSum="1"
+                            android:layout_weight="0.07" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Add Course"
+                                android:id="@+id/tcLogo"
+                                android:textAlignment="center"
+                                android:textSize="20dp"
+                                android:textIsSelectable="false"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textStyle="bold"
+                                android:textColor="#874DAD" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textFieldParent"
+                            android:layout_weight="0.07"
+                            android:weightSum="1" >
+
+                            <EditText
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:ems="10"
+                                android:id="@+id/etMatno"
+                                android:hint="Matric No." />
+
+                            <EditText
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:id="@+id/etCourseCode"
+                                android:hint="Course Code"
+                                android:inputType="text" />
+
+                            <EditText
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:ems="10"
+                                android:id="@+id/etCourseTitle"
+                                android:hint="Course Title" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/addButtonHolder"
+                            android:layout_weight="0.47" >
+
+                            <Button
+                                style="@style/Base.Widget.AppCompat.ActionButton"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ADD COURSE"
+                                android:id="@+id/btnAddCourse"
+                                android:capitalize="characters"
+                                android:clickable="true"
+                                android:textSize="20dp"
+                                android:background="@color/switch_thumb_normal_material_dark"
+                                android:enabled="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabStaffQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/logoHolder2"
+                            android:weightSum="1"
+                            android:layout_weight="0.07" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Add Question"
+                                android:id="@+id/tcLogo2"
+                                android:textAlignment="center"
+                                android:textSize="20dp"
+                                android:textIsSelectable="false"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textStyle="bold"
+                                android:textColor="#874DAD" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textFieldParent2"
+                            android:layout_weight="0.07"
+                            android:weightSum="1" >
+
+                            <EditText
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:ems="10"
+                                android:id="@+id/etCourseCode2"
+                                android:hint="Course Code" />
+
+                            <EditText
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:id="@+id/etQuestion2"
+                                android:hint="Question"
+                                android:inputType="text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/addButtonHolder2"
+                            android:layout_weight="0.47" >
+
+                            <Button
+                                style="@style/Base.Widget.AppCompat.ActionButton"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ADD QUESTION"
+                                android:id="@+id/btnAddQuestion2"
+                                android:capitalize="characters"
+                                android:clickable="true"
+                                android:textSize="20dp"
+                                android:background="@color/switch_thumb_normal_material_dark"
+                                android:enabled="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabStaffReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/logoHolder3"
+                            android:weightSum="1"
+                            android:layout_weight="0.07" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Add Grade"
+                                android:id="@+id/tcLogo3"
+                                android:textAlignment="center"
+                                android:textSize="20dp"
+                                android:textIsSelectable="false"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textStyle="bold"
+                                android:textColor="#874DAD" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textFieldParent3"
+                            android:layout_weight="0.07"
+                            android:weightSum="1" >
+
+                            <EditText
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:ems="10"
+                                android:id="@+id/etMatno3"
+                                android:hint="Matric No." />
+
+                            <EditText
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:id="@+id/etCourseCode3"
+                                android:hint="Course Code"
+                                android:inputType="text" />
+
+                            <EditText
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:ems="10"
+                                android:id="@+id/etGrade3"
+                                android:hint="Grade" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/addButtonHolder3"
+                            android:layout_weight="0.47" >
+
+                            <Button
+                                style="@style/Base.Widget.AppCompat.ActionButton"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ADD GRADE"
+                                android:id="@+id/btnAddGrade3"
+                                android:capitalize="characters"
+                                android:clickable="true"
+                                android:textSize="20dp"
+                                android:background="@color/switch_thumb_normal_material_dark"
+                                android:enabled="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

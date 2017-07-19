@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">E Portal</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tab">TabActivity</string>
+
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_staff_login">Staff Login</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_activity_staff_dashboard">Staff Dashboard</string>
+9    <string name="title_activity_tab_courses">tabCourses</string>
+    <string name="title_activity_tab_report">tabReportActivity</string>
+    <string name="title_activity_tab_question">tabQuestionActivity</string>
+</resources>

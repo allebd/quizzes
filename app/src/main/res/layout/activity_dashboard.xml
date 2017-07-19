@@ -1,0 +1,459 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    tools:context="com.alleb_d.eportal.DashboardActivity">
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tabCourseWare"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ListView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lvCourses" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:id="@+id/tableLayout1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" >
+
+                            <!-- 3 columns -->
+                            <TableRow
+                                android:id="@+id/tableRow1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:id="@+id/textView1"
+                                    android:layout_width="40dp"
+                                    android:text="S/N"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="150dp"
+                                    android:paddingRight="10dp"
+                                    android:text="Question"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/textViews"
+                                    android:layout_width="100dp"
+                                    android:text="Answer"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="15sp" />
+                            </TableRow>
+
+                            <!-- just draw a red line -->
+                            <View
+                                android:layout_height="2dp"
+                                android:background="#874DAD" />
+
+                            <!-- 3 columns -->
+                            <TableRow
+                                android:id="@+id/tableRow2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp" >
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:text="1"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:text="Is Africa a Country?"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textSize="15sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:text="Yes" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tableRow32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp" >
+
+                                <TextView
+                                    android:id="@+id/textView33"
+                                    android:text=""
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/textView32"
+                                    android:text=""
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textSize="15sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:text="No" />
+
+                            </TableRow>
+
+                            <!-- 3 columns -->
+                            <TableRow
+                                android:id="@+id/tableRow3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp" >
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:text="2"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/textView5"
+                                    android:text="Select a Country in Africa"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textSize="15sp" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Egypt" />
+
+                            </TableRow>
+
+                            <!-- 3 columns -->
+                            <TableRow
+                                android:id="@+id/tableRow23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp" >
+
+                                <TextView
+                                    android:id="@+id/textView24"
+                                    android:text=""
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/textView25"
+                                    android:text=""
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textSize="15sp" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tanzania" />
+
+                            </TableRow>
+
+                            <!-- 3 columns -->
+                            <TableRow
+                                android:id="@+id/tableRow4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp" >
+
+                                <TextView
+                                    android:id="@+id/textView6"
+                                    android:text="3"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/textView7"
+                                    android:text="What is Nigeria's Population?"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textSize="15sp" />
+
+                                <EditText
+                                    android:id="@+id/editText3" />
+                            </TableRow>
+
+                            <!-- 3 columns -->
+                            <TableRow
+                                android:id="@+id/tableRow5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp" >
+
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:text="4"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/textView9"
+                                    android:text="What is your favourite country?"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textSize="15sp" />
+
+                                <EditText
+                                    android:id="@+id/editText4" />
+                            </TableRow>
+
+                            <!-- 3 columns -->
+                            <TableRow
+                                android:id="@+id/tableRow9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp" >
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:text="5"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/textView12"
+                                    android:text="What is your favourite state?"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textSize="15sp" />
+
+                                <EditText
+                                    android:id="@+id/editText14" />
+                            </TableRow>
+
+                            <!-- 3 columns -->
+                            <TableRow
+                                android:id="@+id/tableRow6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="3dp" >
+
+                                <Button
+                                    android:id="@+id/button1"
+                                    android:layout_column="2"
+                                    android:text="Submit" />
+                            </TableRow>
+
+                        </TableLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:id="@+id/tableLayoutGrade"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <!-- 1 columns -->
+                            <TableRow
+                                android:id="@+id/tableRowGrade"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:id="@+id/textViewGrade1"
+                                    android:text="Courses"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:layout_width="200dip" />
+
+                                <TextView
+                                    android:id="@+id/textViewGrade2"
+                                    android:text="Grade"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:layout_width="150dp" />
+                            </TableRow>
+
+                            <!-- just draw a red line -->
+                            <View
+                                android:layout_height="2dp"
+                                android:background="#874DAD" />
+
+                            <!-- 2 columns -->
+                            <TableRow
+                                android:id="@+id/tableRowGrade3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:id="@+id/textViewGrade4"
+                                    android:text="CST511"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                                <TextView
+                                    android:id="@+id/textViewGrade5"
+                                    android:text="A"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                            </TableRow>
+
+                            <!-- 2 columns -->
+                            <TableRow
+                                android:id="@+id/tableRowGrade6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:id="@+id/textViewGrade7"
+                                    android:text="EDS833"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                                <TextView
+                                    android:id="@+id/textViewGrade8"
+                                    android:text="B"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                            </TableRow>
+
+                            <!-- 2 columns -->
+                            <TableRow
+                                android:id="@+id/tableRowGrade4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:id="@+id/textViewGrade9"
+                                    android:text="PDP688"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                                <TextView
+                                    android:id="@+id/textViewGrade10"
+                                    android:text="A"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                            </TableRow>
+
+                            <!-- 2 columns -->
+                            <TableRow
+                                android:id="@+id/tableRowGrade5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:id="@+id/textViewGrade11"
+                                    android:text="CIS511"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                                <TextView
+                                    android:id="@+id/textViewGrade120"
+                                    android:text="A"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                            </TableRow>
+
+                            <!-- 2 columns -->
+                            <TableRow
+                                android:id="@+id/tableRowGrade7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:id="@+id/textViewGrade12"
+                                    android:text="APC833"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                                <TextView
+                                    android:id="@+id/textViewGrade13"
+                                    android:text="B"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                            </TableRow>
+
+                            <!-- 2 columns -->
+                            <TableRow
+                                android:id="@+id/tableRowGrade8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:id="@+id/textViewGrade14"
+                                    android:text="ENG688"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                                <TextView
+                                    android:id="@+id/textViewGrade15"
+                                    android:text="A"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                            </TableRow>
+
+                        </TableLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>
+
+
+</ScrollView>
